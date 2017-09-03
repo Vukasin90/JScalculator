@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konvertor valuta</title>
+        <meta charset="utf-8">
+        <link href="../normalize.css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+     </head>
+    <body>
+    
+        <div id="container">
+            <h1>Konvertor dinara u strane valute</h1>
+            
+            <div id="calculator">
+                
+                <form>
+                    <label>
+                        Unesite cifru koju želite da konvertujete<br>
+                        DIN <input type="text" id="moneyAmount">
+                    </label>
+                    <label>
+                        Odaberite u koju valutu zelite da konvertujete<br>
+                        <select id="valuta">
+                            <option disabled selected value="0">
+                            --Izaberite valutu--</option>
+                            <option value="121.7805">EUR</option>
+                            <option value="112.0851">CHF</option>
+                            <option value="138.1358">GBP</option>
+                            <option value="109.0149">USD</option>
+                            <option value="1.8143">RUB</option>
+                        </select>
+                    </label>
+                    <button type="button" id="calculate" > Izracunaj</button>
+                </form>
+                    <div id="totalAmount">
+                        <sup>€</sup><span id="tip">0.00</span>
+                    </div>
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="Script.js"></script>
+    </body>
+</html>
